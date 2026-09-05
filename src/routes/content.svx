@@ -1,0 +1,92 @@
+<svelte:options runes={false} />
+<script>
+  import Card from '$lib/components/Card.svelte';
+</script>
+
+<Card>
+
+# Sivert Lysnes
+
+</Card>
+
+<Card>
+
+## Om meg
+Jeg er utdannet dataelektroniker som nå studerer applikasjonsutvikling på NTNU. Jeg er vant til å jobbe med 
+varierte oppgaver, og har blitt omtalt som "kontorets potet". Utover dette jobber jeg også mye med mennesker, 
+og har vært alt fra støttekontakt til mentor til assistent i hjemmetjenesten.
+
+Jeg har en lidenskap i å utvikle sikre og åpne systemer som hele samfunnet kan dra nytte av. For ofte har jeg 
+sett sikkerhet bli omtalt som noe man gjør i etterkant.
+
+Jeg har jobbet mest i embedded og behersker de tekniske detaljene godt. Jeg har alltid vært veldig interresert 
+i å utvikle IoT systemer som er lett for forbrukere å utvikle egne integrasjoner for, samtidig som de er 
+trygge for eksterne angrep.
+
+</Card>
+
+<Card>
+
+## Hva du finner her
+\> [En oversikt over tidligere og nåværende prosjekter.](/projects)
+
+\> [En oversikt over hvilke kompetanse jeg har i forskjellige felt innenfor teknologi.](/skills)
+
+\> [Refleksjoner og kommentarer på kodeparadigmer og teknologi.](/blog)
+
+</Card>
+
+<Card>
+
+## Mine mål
+Mitt mål med utdanningen er å ende opp i en rolle der jeg kan undervise, instruere og samtidig utvikle 
+programvare. Jeg ønsker å fremme teknologi som fagfelt, og sørke for et sikkerhetsfokusert yrkesmiljø 
+for fremtiden. I førsteomgang skal jeg senere ta en utdanning innen pedagogikk, men jeg har tenkt å 
+jobbe med programvare- og applikasjonsutvikling i tillegg.
+
+</Card>
+
+<Card>
+
+## Min ideelle arbeidsplass
+Min ideelle arbeidsplass er en arbeidsplass som bygger på en sterk sikkerhetskultur, samtidig som jeg 
+får muligheten til å innovere og lære. En arbeidsplass der oppgaver blir tildelt ikke bare for det du 
+kan, men også det du kan lære.
+
+</Card>
+
+<!-- <div class="card w-auto m-4 preset-filled-surface-200-800 p-4 text-center corner-shape-bevel">
+    <h1 class="h1">Sivert Lysnes</h1>
+</div>
+
+<div class="card w-auto m-4 preset-filled-surface-100-900 p-4 corner-shape-bevel ">
+    <h2 class="h2 pb-6">Om meg</h2>
+    <p class="pb-4">Jeg er utdannet dataelektroniker som nå studerer applikasjonsutvikling på NTNU. Jeg er vant til å jobbe med varierte oppgaver, og har blitt omtalt som "kontorets potet". Utover dette jobber jeg også mye med mennesker, og har vært alt fra støttekontakt til mentor til assistent i hjemmetjenesten.</p>
+    <p class="pb-4">Jeg har en lidenskap i å utvikle sikre og åpne systemer som hele samfunnet kan dra nytte av. For ofte har jeg sett sikkerhet bli omtalt som noe man gjør i etterkant.</p>
+    <p class="pb-4">Jeg har jobbet mest i embedded og behersker de tekniske detaljene godt. Jeg har alltid vært veldig interresert i å utvikle IoT systemer som er lett for forbrukere å utvikle egne integrasjoner for, samtidig som de er trygge for eksterne angrep.</p>
+</div>
+
+<div class="card w-auto m-4 preset-filled-surface-100-900 p-4 corner-shape-bevel">
+    <h2 class="h2 pb-6">Hva du finner her</h2>
+
+    <div class="flex flex-col">
+        <a href="/projects" class="anchor" tabindex="0"><span class=""> > </span> En oversikt over tidligere og nåværende prosjekter.</a>
+        <a href="/skills" class="anchor" tabindex="0"><span class=""> > </span> En oversikt over hvilke kompetanse jeg har i forskjellige felt innenfor teknologi.</a>
+        <a href="/blog" class="anchor" tabindex="0" ><span class=""> > </span> Refleksjoner og kommentarer på kodeparadigmer og teknologi.</a>
+    </div>
+</div>
+
+
+
+<div class="card w-auto m-4 preset-filled-surface-100-900 p-4 corner-shape-bevel">
+    <h2 class="h2 pb-6">Mine mål</h2>
+
+    <p class="pb-4">Mitt mål med utdanningen er å ende opp i en rolle der jeg kan undervise, instruere og samtidig utvikle programvare. Jeg ønsker å fremme teknologi som fagfelt, og sørke for et sikkerhetsfokusert yrkesmiljø for fremtiden. I førsteomgang skal jeg senere ta en utdanning innen pedagogikk, men jeg har tenkt å jobbe med programvare- og applikasjonsutvikling i tillegg.</p>
+</div>
+
+
+<div class="card w-auto m-4 preset-filled-surface-100-900 p-4 corner-shape-bevel">
+    <h2 class="h2 pb-6">Min ideelle arbeidsplass</h2>
+
+    <p class="pb-4">Min ideelle arbeidsplass er en arbeidsplass som bygger på en sterk sikkerhetskultur, samtidig som jeg får muligheten til å innovere og lære. En arbeidsplass der oppgaver blir tildelt ikke bare for det du kan, men også det du kan lære.</p>
+</div> -->
