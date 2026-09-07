@@ -13,7 +13,20 @@
 
     let navbar_elements = [
         {
-            category_name: "teknoblogg",
+            category_name: "",
+            links: [
+                {
+                    label: "Hovedside",
+                    href: "/"
+                },
+                {
+                    label: "Kompetanse",
+                    href: "/skills"
+                }
+            ]
+        },
+        {
+            category_name: "Teknoblogg",
             links: [
                 {
                     label: "Nyeste innlegg",
@@ -26,15 +39,11 @@
             ]
         },
         {
-            category_name: "",
+            category_name: "Prosjekter",
             links: [
                 {
-                    label: "Hovedside",
-                    href: "/"
-                },
-                {
-                    label: "kompetanse",
-                    href: "/skills"
+                    label: "Forside",
+                    href: "/projects"
                 }
             ]
         }
@@ -42,6 +51,7 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
+
 <div class="flex h-screen flex-col overflow-hidden bg-surface-50-900">
     <AppBar class="bg-surface-200-800">
         <AppBar.Toolbar class="grid-cols-[auto_1fr_auto]">
@@ -59,22 +69,41 @@
     </AppBar>
 
     <div class="flex flex-1 overflow-hidden">
-    {#if sidebar_open}
+        {#if sidebar_open}
         <aside class="transition-all duration-300" transition:slide={{duration: 300, axis: "x"}}>
             <Navigation layout="sidebar" class="grid grid-cols-[auto_1fr_auto] gap-4 preset-filled-surface-50-900">
                 <Navigation.Header></Navigation.Header>
-                <Navigation.Content></Navigation.Content>
+                <Navigation.Content>
+                    {#each navbar_elements as element}
+                        <Navigation.Group>
+                            <Navigation.Label class="capitalize pl-2">{element.category_name}</Navigation.Label>
+                            <Navigation.Menu>
+                                {#each element.links as link}
+                                    <Navigation.TriggerAnchor href={link.href} title={link.label} aria-label={link.label}>
+                                        <Navigation.TriggerText>{link.label}</Navigation.TriggerText>
+                                    </Navigation.TriggerAnchor>
+                                {/each}
+                            </Navigation.Menu>
+                        </Navigation.Group>
+                    {/each}
+                </Navigation.Content>
                 <Navigation.Footer></Navigation.Footer>
             </Navigation>
         </aside>
         {/if}
         <div class="flex flex-col justify-between flex-1 overflow-y-auto min-h-full">
-            <main class="p-6 flex-1">
-                {@render children()}
-            </main>
-            <footer class="flex flex-1 w-full preset-filled-surface-100-900 leading-none">
-                <Footer/>
-            </footer>
+            <div class="flex justify-between">
+                <div class=""></div>
+                <main class="p-6 flex-1 max-w-2/3">     
+                    {@render children()}
+                </main>
+                <div class=""></div>
+            </div>
+            <div class="h-auto"></div>
+            
         </div>
     </div>
+    <footer class="flex  w-full h-fit preset-filled-surface-200-800 leading-none">
+                <Footer/>
+            </footer>
 </div>
